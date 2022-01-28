@@ -1,0 +1,17 @@
+{
+  "name": "Basic-Climate-Project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nevesto/Basic-Climate-Project.git",
+  "author": "pequenojoohn <pequenojoohn@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "css": "sass --watch ./sass/styles.scss ./css/styles.css"
+  },
+  "dependencies": {
+    "sass": "^1.49.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
