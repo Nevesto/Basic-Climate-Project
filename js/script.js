@@ -37,6 +37,17 @@ function showInfo(json) {
 
      document.querySelector('.temp img').setAttribute('src', `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`);
      document.querySelector('.ventoPonto').style.transform = `rotate(${json.windAngle-90}deg)`;
+
+     changeBackground(json.temp);
+}
+
+function changeBackground(temp) {
+    if(temp > 27) {
+        return document.querySelector('.background-theme').classList.add('fire');
+    }
+    if (temp > 16) {
+        return document.querySelector('.background-theme').classList.add('rain');
+    }
 }
 
 function clearInfo() {

@@ -10,11 +10,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: #333;
 }
-
-h1 {
+body .background-theme {
+  background-color: #333;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+body h1 {
   color: #fff;
   margin: 20px 0;
 }
@@ -125,6 +132,27 @@ footer {
   margin-top: 20px;
   color: #fff;
   font-size: 16px;
+}
+
+.fire {
+  background-image: url("");
+  animation: smoothing 3s both;
+}
+
+.rain {
+  background-image: url("https://cdn.discordapp.com/attachments/899866343946457149/936426676076830790/9afe0493484903.5e66500f8dea4.gif");
+  animation: smoothing 3s both;
+}
+
+@keyframes smoothing {
+  0% {
+    background-color: #333;
+    opacity: 0;
+  }
+  100% {
+    background-color: #333;
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
