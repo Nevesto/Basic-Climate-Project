@@ -1,3 +1,5 @@
 # Basic-Climate-Project
-You can use this as a challenge, be creative.
+
+web climate using weather api.
+
 ![Image](Image.png)
